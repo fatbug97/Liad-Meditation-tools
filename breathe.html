@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
 <body>
 <div class="watch-face">
   <div class="circle"></div>
@@ -18,7 +21,7 @@
     if (text.innerText === state[0]) {
       text.innerText = state[1]
     } else text.innerText = state[0];
-  }, 5000);
+  }, 5100);
 </script>
 <style>
   p {
@@ -27,8 +30,9 @@
     bottom: 10%;
     display: flex;
     margin-bottom: 40px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     animation: text 5s infinite;
+    font-family: 'Quicksand', sans-serif;
   }
   @keyframes text {
     0% {
@@ -37,8 +41,11 @@
     20% {
       opacity: 0.1;
     }
-    100% {
+    90% {
       opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
   body {
